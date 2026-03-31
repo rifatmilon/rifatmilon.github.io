@@ -1,0 +1,10 @@
+- [x] **Phase 1: Project Setup**
+- [x] **Phase 2: Global Styling (Modern Dark High Contrast)**
+- [x] **Phase 3: Core Components**
+- [x] **Phase 4: Pages Architecture**
+  - [x] Set up `App.jsx` with React Router.
+  - [x] `Overview` (Home) page.
+  - [x] `Experience`, `Education`, `Projects`, `Publications`, `Certifications`, `Awards` generated.
+  - [x] `Contact` page with "Reason/Purpose" mandatory field targeting Formspree.
+- [x] **Phase 5: GitHub Actions**
+  - [x] Create `.github/workflows/deploy.yml` for automatic deployment.
