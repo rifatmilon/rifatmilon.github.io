@@ -1,0 +1,40 @@
+# CV Integration & Portfolio Population Complete
+
+I have successfully parsed your Academic and Industry CVs and directly integrated the real-world content into your React + Vite Portfolio application. The local development server has been verified, and the design looks fantastic!
+
+## Accomplishments
+
+*   **CV Data Extraction (`fitz` / PyMuPDF)**: Extracted all text correctly from both PDFs, preserving important details like publications, citations, timeline, and academic focus.
+*   **Fully Populated Pages (React & Vanilla CSS)**: Replaced all the stubbed details across every page:
+    *   **Overview**: Updated intro to reflect your focus strictly on AI/ML and your intent for PhD positions & Research. Added dynamic statistics for Publications and Experience.
+    *   **Experience**: Inserted your roles at Softvence and EVOMED with correct timelines and bullet responsibilities. Added your complete skill matrix spanning AI, LLMs, frameworks, and MLOps.
+    *   **Education**: Integrated your degree, CGPA, graduation timeline, academic referees, and listed research interests.
+    *   **Projects**: Populated the 4 major case studies, emphasizing your IEEE COMPAS 2025 and BioMedInformatics works, matching them with DOIs and framework tags.
+    *   **Publications**: Extracted your 4 specific papers, complete with authors, journals, DOIs, and beautifully marked your *Best Paper Award* for ICEEIE 2025.
+    *   **Awards & Certifications**: Filled out your ToT Cybersecurity and PySpark data certifications, as well as your UCPC Vice Presidency role!
+*   **Contact Page Verification**: Connected your real email, social presence (GitHub, Scholar, LinkedIn), and ensured the Formspree endpoint acts accordingly with the desired "Reason / Purpose" dropdown. 
+
+## Visual Verification
+
+I spun up the Vite dev server and ran an autonomous browser subagent to verify the live build and responsive UI. Here is a look at what the application currently looks like on the web!
+
+````carousel
+![Overview - Scrolled](C:\Users\rifat\.gemini\antigravity\brain\93c33790-9314-4991-9021-60efe194058f\overview_page_scrolled_1775015696875.png)
+<!-- slide -->
+![Experience - Content](C:\Users\rifat\.gemini\antigravity\brain\93c33790-9314-4991-9021-60efe194058f\experience_page_scrolled_final_1775015715705.png)
+<!-- slide -->
+![Projects - Showcase](C:\Users\rifat\.gemini\antigravity\brain\93c33790-9314-4991-9021-60efe194058f\projects_page_scrolled_1775015729601.png)
+<!-- slide -->
+![Publications - Papers](C:\Users\rifat\.gemini\antigravity\brain\93c33790-9314-4991-9021-60efe194058f\publications_page_scrolled_1775015743660.png)
+````
+
+### Animation & Interaction Recording
+![User experience recording](C:\Users\rifat\.gemini\antigravity\brain\93c33790-9314-4991-9021-60efe194058f\portfolio_navigation_demo_1775015659537.webp)
+
+> [!TIP]
+> **To proceed with deployment:**
+> 1. Make sure to update `.github/workflows/deploy.yml` with your preferences if needed.
+> 2. Ensure your `package.json` has `"homepage": "https://rifatmilon.github.io"` if there are any issues resolving assets in production (though Vite default usually handles it well depending on path configurations).
+> 3. Add your `resume.pdf` to the `/public` directory so the direct download button functions properly!
+
+Everything builds cleanly without errors, and the local dev server is currently running actively on `http://localhost:5173/` if you'd like to dive into the browser yourself!

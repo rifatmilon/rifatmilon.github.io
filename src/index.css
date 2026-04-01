@@ -153,6 +153,11 @@ a:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 229, 255, 0.5); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 5px rgba(0, 229, 255, 0); }
+}
+
 .animate-fade-in {
   animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

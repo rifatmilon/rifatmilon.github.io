@@ -1,0 +1,103 @@
+Md. Rifat Aknda 
+AI/ML Engineer  
+Dhaka, Bangladesh  |  rifataknda.r@gmail.com  |  +880 1955-069244   
+GitHub  |  LinkedIn  |  Google Scholar  
+PROFESSIONAL SUMMARY 
+ 
+AI/ML Engineer with hands-on experience building and deploying production-grade machine learning and deep 
+learning systems for healthcare and industrial applications. Specializes in end-to-end AI pipelines, real-time inference 
+optimization (ONNX, quantization), LLM-powered automation, and n8n workflow automation. Published researcher 
+with four peer-reviewed papers including a Best Paper Award, bridging cutting-edge AI research with scalable real-
+world deployment. 
+TECHNICAL SKILLS 
+ 
+AI & ML 
+Machine Learning, Deep Learning, CNNs, Transformers, Transfer Learning, Multimodal ML, 
+Explainable AI (Grad-CAM++, SHAP), Object Detection, OCR, ALPR, Computer Vision, Medical 
+Imaging 
+LLMs & Automation LLM Integration, Prompt Engineering, RAG Pipelines, LLM Agents, n8n Automation Workflows, 
+LangChain, Hugging Face Transformers, Vector Databases (Pinecone, ChromaDB) 
+Frameworks 
+PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, NumPy, Pandas, Matplotlib, Seaborn 
+Deployment & 
+MLOps 
+ONNX Optimization, Model Quantization, FastAPI, Flask, Django, Docker, End-to-End ML Pipelines, 
+Real-Time Inference 
+Data & Tools 
+MySQL, PySpark, Git/GitHub, Jupyter Notebook, CVAT, Roboflow, Power BI 
+Languages 
+Python, R, C/C++, JavaScript, HTML/CSS 
+PROFESSIONAL EXPERIENCE 
+ 
+AI Developer | Softvence 
+Feb 2026 – Present 
+• Build LLM-powered automation workflows using n8n, integrating OpenAI-compatible APIs with business logic 
+pipelines for client-facing automation solutions. 
+• Develop RAG-based document processing pipelines using LangChain and vector databases (Pinecone, 
+ChromaDB) to enable semantic search and intelligent document retrieval. 
+• Design and deploy an AI-powered email automation system combining LLM-based intent classification, 
+LangChain chains, and Pinecone vector store for context-aware email response generation. 
+• Integrate AI agents and n8n workflow nodes with external APIs, databases, and messaging services to automate 
+multi-step business processes end-to-end. 
+AI Engineer | EVOMED Technology 
+Apr 2025 – Sep 2025 
+• Designed and deployed end-to-end ML/DL solutions for healthcare diagnostics and industrial applications, 
+covering full pipeline from data preprocessing through production deployment. 
+• Built and integrated real-time inference APIs with FastAPI and Flask backends, supporting both desktop and web-
+based production environments. 
+• Optimized model inference using ONNX optimization and INT8 quantization, reducing computational resource 
+usage and improving real-time performance on edge hardware. 
+• Engineered large-scale preprocessing and annotation workflows for image, audio, and video datasets, improving 
+dataset quality and consistency for model training. 
+• Applied SHAP-based feature analysis across multimodal datasets to identify data bias and model behavior 
+patterns, improving model transparency for clinical stakeholders. 
+• Documented APIs, system architecture, and experiment results; collaborated with cross-functional teams to 
+deliver solutions on schedule 
+PUBLICATIONS 
+ 
+[1] M. R. Aknda, F. A. Farid, J. Uddin, S. Mansor, and M. G. Kibria, “SCCM: An Interpretable Enhanced Transfer Learning 
+Model for Improved Skin Cancer Classification,” BioMedInformatics (MDPI), vol. 5, no. 3, p. 43, 2025. DOI: 
+10.3390/biomedinformatics5030043 
+[2] F. Rabby, R. Das, M. M. Rahman, M. H. Hossain, and M. R. Aknda, “Scalable Hand Gesture Recognition from Surface 
+Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Datasets,” 2025 9th 
+International Conference on Electrical, Electronics and Information Engineering (ICEEIE), Mataram, Indonesia, pp. 1-6, 
+2025. DOI: 10.1109/ICEEIE66203.2025.11252161 [Best Paper Award] 
+[3] F. Rabby, M. R. Aknda, M. T. Mahi, S. R. A. Ratul, and B. Z. Shezan, “TinySenseNet: A Lightweight sEMG-IMU Fusion 
+Network Using TinyML for Mechanical Arm Control in Low-Resource Settings,” 2025 IEEE Conference on Computing, 
+Power, and Automation Systems (COMPAS), 2025. DOI: 10.1109/COMPAS67506.2025.11381831 
+[4] F. Rabby, M. H. Hossain, M. R. Aknda, B. Z. Shezan, and S. S. Mou, “Real-Time Brain Tumor Localization and 
+Classification Using YOLOv11 and MONAI MedNeXt,” 2025 IEEE Conference on Computing, Power, and Automation 
+Systems (COMPAS), 2025. DOI: 10.1109/COMPAS67506.2025.11381706 
+SELECTED PROJECTS 
+ 
+SCCM: Interpretable Skin Cancer Classification 
+2024 – 2025 
+• Developed an interpretable transfer learning model (Xception + MobileNetV2 + DenseNet201 ensemble with 
+custom classification module) for skin cancer classification on dermoscopic images, achieving 90.91% test 
+accuracy and 93.73% external validation accuracy. 
+• Applied Grad-CAM++ to generate clinically aligned visual explanations, improving model interpretability for 
+medical decision support. 
+• Deployed as a standalone Python/Flask desktop application enabling offline, explainable AI inference without 
+internet dependency. 
+IoT-Based Automated Smart Parking System 
+2025 
+• Built an end-to-end automated parking system integrating IoT sensors, computer vision vehicle detection, and 
+Automatic License Plate Recognition (ALPR) using EasyOCR. 
+• Designed Python backend with OpenCV-based preprocessing and MySQL for structured event logging and 
+access control. 
+• Enabled real-time edge-level inference to support responsive and scalable system operation across multiple 
+zones. 
+EDUCATION 
+ 
+B.Sc. in Computer Science & Engineering | University of Liberal Arts Bangladesh (ULAB) 
+Graduated 2025 
+CGPA: 3.51 / 4.00 
+CERTIFICATIONS & TRAINING 
+ 
+• Big Data Fundamentals with PySpark, DataCamp, January 2025 
+• Digital Security Training (DST), Training of Trainers (ToT), Asia Centre & Google in partnership with ULAB, 
+November 2025 
+ACHIEVEMENTS & LEADERSHIP 
+ 
+• Best Paper Award, ICEEIE 2025 International Conference 
+• Vice President, ULAB Computer Programming Club (UCPC), 2023 
