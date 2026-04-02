@@ -1,4 +1,4 @@
-# Rifat Milon Portfolio 🚀
+# Md. Rifat Aknda - Portfolio 🚀
 
 A modern, high-performance portfolio website built with React, Vite, and pure Vanilla CSS (High Contrast Dark Mode). The site automatically deploys to GitHub Pages via GitHub Actions.
 
@@ -63,4 +63,3 @@ The repository is already configured with an automated deployment pipeline. When
    - Under **Build and deployment**, ensure the **Source** is set to **GitHub Actions**. (Do not select `Deploy from a branch` as Vite creates static artifacts which the GitHub Actions deployment script uploads natively).
 5. Give it 1-2 minutes! The action will build the site, and it will be live at `https://rifatmilon.github.io`.
 
-> **Note**: Don't forget to place a copy of your resume named `resume.pdf` inside the `public/` folder so the download button on the Overview page correctly links to it.

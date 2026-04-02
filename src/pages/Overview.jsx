@@ -1,12 +1,11 @@
 import { ArrowRight, Download, Github, Linkedin, BookOpen, FlaskConical } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import AnimatedCard from '../components/AnimatedCard';
 
 const stats = [
   { value: '4', label: 'Publications' },
   { value: '1', label: 'Best Paper Award' },
   { value: '2+', label: 'Years Industry Experience' },
-  { value: '3.51', label: 'CGPA / 4.00' },
 ];
 
 const highlights = [
@@ -34,10 +33,12 @@ const highlights = [
 ];
 
 export default function Overview() {
+  const navigate = useNavigate();
+
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="section" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section className="section" style={{ minHeight: '100dvh', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         {/* Background glow */}
         <div style={{ position: 'absolute', top: '10%', right: '-5%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(0,229,255,0.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', bottom: '10%', left: '-5%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(112,0,255,0.05) 0%, transparent 70%)', pointerEvents: 'none' }} />
@@ -86,14 +87,14 @@ export default function Overview() {
       </section>
 
       {/* Highlights */}
-      <section className="section" style={{ backgroundColor: 'var(--bg-secondary)' }}>
+      <section className="section">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '4rem' }}>Explore My Portfolio</h2>
           <div className="grid-3">
             {highlights.map((h, i) => {
               const Icon = h.icon;
               return (
-                <AnimatedCard key={i} onClick={() => window.location.href = h.to}>
+                <AnimatedCard key={i} onClick={() => navigate(h.to)} style={{ cursor: 'pointer' }}>
                   <div style={{ background: 'rgba(0,229,255,0.08)', padding: '0.85rem', borderRadius: '12px', color: 'var(--accent-base)', display: 'inline-flex', marginBottom: '1.25rem' }}>
                     <Icon size={24} />
                   </div>

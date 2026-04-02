@@ -20,7 +20,7 @@
 }
 
 .nav-logo {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--accent-base);
   letter-spacing: -1px;
@@ -29,7 +29,7 @@
 .nav-desktop {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .nav-link {

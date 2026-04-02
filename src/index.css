@@ -20,7 +20,7 @@
   --glass-border: rgba(255, 255, 255, 0.05);
 
   --font-main: 'Inter', system-ui, sans-serif;
-  --spacing-section: 6rem;
+  --spacing-section: 4.5rem;
   --max-width: 1200px;
 }
 
@@ -89,6 +89,7 @@ a:hover {
 .gradient-text {
   background: linear-gradient(135deg, var(--accent-base) 0%, var(--accent-secondary) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -141,9 +142,14 @@ a:hover {
   h1 { font-size: 2.8rem; }
 }
 
+.hover-interest:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-base) !important;
+}
+
 @media (max-width: 768px) {
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-  .section { padding: 4rem 0; }
+  .section { padding: 3rem 0; }
   h1 { font-size: 2.2rem; }
 }
 

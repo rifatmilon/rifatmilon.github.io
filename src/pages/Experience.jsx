@@ -36,6 +36,7 @@ const skillCategories = [
   { label: 'Deployment & MLOps', skills: ['ONNX Optimization', 'Model Quantization', 'FastAPI', 'Flask', 'Django', 'Docker', 'Real-Time Inference'] },
   { label: 'Data & Tools', skills: ['MySQL', 'PySpark', 'Git / GitHub', 'Jupyter', 'CVAT', 'Roboflow', 'Power BI'] },
   { label: 'Languages', skills: ['Python', 'R', 'C / C++', 'JavaScript', 'HTML / CSS'] },
+  { label: 'Soft Skills', skills: ['Problem Solving', 'Team Leadership', 'Technical Writing', 'Public Speaking', 'Adaptability', 'Critical Thinking'] },
 ];
 
 export default function Experience() {
@@ -84,10 +85,10 @@ export default function Experience() {
         </div>
       </section>
 
-      {/* Technical Skills */}
-      <section className="section" style={{ backgroundColor: 'var(--bg-secondary)' }}>
+      {/* Professional Skills */}
+      <section className="section">
         <div className="container">
-          <h2 style={{ marginBottom: '3rem' }}>Technical Skills</h2>
+          <h2 style={{ marginBottom: '3rem' }}>Professional Skills</h2>
           <div className="grid-3">
             {skillCategories.map((cat, i) => (
               <AnimatedCard key={i}>

@@ -1,6 +1,17 @@
 import { BookOpen, Award, ExternalLink } from 'lucide-react';
 import AnimatedCard from '../components/AnimatedCard';
 
+const researchInterests = [
+  'Artificial Intelligence & Machine Learning',
+  'Computer Vision',
+  'Multimodal Machine Learning (Signal, Image, Text)',
+  'Biomedical Signal Processing',
+  'Deep Learning & Edge AI',
+  'Transfer Learning and Feature Fusion',
+  'Wearable Computing & Human-Centered AI',
+  'Explainable AI for Clinical Decision Support',
+];
+
 const stats = [
   { value: '1', label: 'Journal Article' },
   { value: '3', label: 'Conference Papers (IEEE)' },
@@ -66,14 +77,38 @@ export default function Publications() {
       <section className="section" style={{ backgroundColor: 'var(--bg-secondary)', paddingBottom: '3rem' }}>
         <div className="container">
           <h1 className="gradient-text" style={{ marginBottom: '1rem' }}>Publications</h1>
-          <p style={{ fontSize: '1.1rem', maxWidth: '700px', marginBottom: '3rem' }}>
+          <p style={{ fontSize: '1.1rem', maxWidth: '700px' }}>
             Peer-reviewed research bridging cutting-edge AI with scalable real-world deployment in healthcare and biomedical applications.
           </p>
-          <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
-            {stats.map((s, i) => (
-              <div key={i} style={{ textAlign: 'center' }}>
-                <p style={{ color: 'var(--accent-base)', fontWeight: '800', fontSize: '2.5rem', lineHeight: 1, margin: 0 }}>{s.value}</p>
-                <p style={{ color: 'var(--text-muted)', marginTop: '0.3rem', fontSize: '0.9rem' }}>{s.label}</p>
+        </div>
+      </section>
+
+      {/* Stats Summary */}
+      <section className="section" style={{ paddingBottom: '1rem' }}>
+        <div className="container">
+          <AnimatedCard>
+            <h2 style={{ marginBottom: '1.5rem', fontSize: '1.6rem', textAlign: 'center' }}>Research Output/Summary</h2>
+            <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+              {stats.map((s, i) => (
+                <div key={i} style={{ textAlign: 'center', flexShrink: 0 }}>
+                  <p style={{ color: 'var(--accent-base)', fontWeight: '800', fontSize: '2.5rem', lineHeight: 1, margin: 0 }}>{s.value}</p>
+                  <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem', fontSize: '0.9rem' }}>{s.label}</p>
+                </div>
+              ))}
+            </div>
+          </AnimatedCard>
+        </div>
+      </section>
+
+      {/* Research Interests */}
+      <section className="section" style={{ paddingBottom: '2rem' }}>
+        <div className="container">
+          <h2 style={{ marginBottom: '2rem' }}>Research Interests</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+            {researchInterests.map((interest, i) => (
+              <div key={i} style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', padding: '0.75rem 1.25rem', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '0.8rem', transition: 'transform 0.3s ease, border-color 0.3s ease' }} className="hover-interest">
+                <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: 'var(--accent-base)', flexShrink: 0, boxShadow: '0 0 8px var(--accent-glow)' }} />
+                <p style={{ margin: 0, color: 'var(--text-primary)', fontWeight: '500', fontSize: '0.95rem' }}>{interest}</p>
               </div>
             ))}
           </div>

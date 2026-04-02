@@ -10,7 +10,7 @@ const navLinks = [
   { name: 'Projects', path: '/projects' },
   { name: 'Publications', path: '/publications' },
   { name: 'Certifications', path: '/certifications' },
-  { name: 'Awards & Others', path: '/awards' },
+  { name: 'Awards & Co-Curricular', path: '/awards' },
 ];
 
 export default function Navbar() {
@@ -30,7 +30,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'nav-scrolled glass' : ''}`}>
       <div className="container nav-container">
         <Link to="/" className="nav-logo">
-          RM.
+          Md. Rifat Aknda
         </Link>
         
         <div className="nav-desktop">
