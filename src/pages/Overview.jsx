@@ -38,7 +38,7 @@ export default function Overview() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="section" style={{ minHeight: '100dvh', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section className="section" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         {/* Background glow */}
         <div style={{ position: 'absolute', top: '10%', right: '-5%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(0,229,255,0.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', bottom: '10%', left: '-5%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(112,0,255,0.05) 0%, transparent 70%)', pointerEvents: 'none' }} />

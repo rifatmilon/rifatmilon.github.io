@@ -67,6 +67,15 @@ a:hover {
 }
 
 /* Layout Utilities */
+.main-content {
+  padding-top: 85px;
+}
+@media (max-width: 900px) {
+  .main-content {
+    padding-top: 70px;
+  }
+}
+
 .container {
   width: 100%;
   max-width: var(--max-width);
