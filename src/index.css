@@ -4,24 +4,26 @@
   --bg-secondary: #111111;
   --bg-card: rgba(255, 255, 255, 0.03);
   --bg-card-hover: rgba(255, 255, 255, 0.08);
-  
+
   --text-primary: #ffffff;
   --text-secondary: #a3a3a3;
   --text-muted: #666666;
-  
-  --accent-base: #00e5ff; /* Cyan for high contrast */
+
+  --accent-base: #00e5ff;
+  /* Cyan for high contrast */
   --accent-glow: rgba(0, 229, 255, 0.4);
-  --accent-secondary: #7000ff; /* Purple for depth/gradients */
-  
+  --accent-secondary: #7000ff;
+  /* Purple for depth/gradients */
+
   --border-color: rgba(255, 255, 255, 0.1);
   --border-color-hover: rgba(0, 229, 255, 0.3);
-  
+
   --glass-bg: rgba(5, 5, 5, 0.7);
   --glass-border: rgba(255, 255, 255, 0.05);
 
   --font-main: 'Inter', system-ui, sans-serif;
-  --spacing-section: 3rem;
-  --max-width: 1200px;
+  --spacing-section: 2rem;
+  --max-width: 100%;
 }
 
 * {
@@ -30,7 +32,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-main);
@@ -40,16 +43,31 @@ html, body {
 }
 
 /* Typography Utilities */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-primary);
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-h1 { font-size: 3.5rem; }
-h2 { font-size: 2.5rem; margin-bottom: 2rem; }
-h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
 p {
   color: var(--text-secondary);
@@ -70,6 +88,7 @@ a:hover {
 .main-content {
   padding-top: 85px;
 }
+
 @media (max-width: 900px) {
   .main-content {
     padding-top: 70px;
@@ -142,13 +161,34 @@ a:hover {
 }
 
 /* Grid Layouts */
-.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
 
 @media (max-width: 992px) {
-  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  h1 { font-size: 2.8rem; }
+
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
 }
 
 .hover-interest:hover {
@@ -157,20 +197,47 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-  .section { padding: 3rem 0; }
-  h1 { font-size: 2.2rem; }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
 }
 
 /* Animations Keyframes */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 229, 255, 0.5); }
-  50% { opacity: 0.7; box-shadow: 0 0 0 5px rgba(0, 229, 255, 0); }
+
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(0, 229, 255, 0.5);
+  }
+
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 5px rgba(0, 229, 255, 0);
+  }
 }
 
 .animate-fade-in {
@@ -190,7 +257,9 @@ a:hover {
   font-size: 0.9rem;
 }
 
-.form-input, .form-textarea, .form-select {
+.form-input,
+.form-textarea,
+.form-select {
   width: 100%;
   padding: 0.8rem 1rem;
   background-color: var(--bg-secondary);
@@ -201,7 +270,9 @@ a:hover {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-input:focus, .form-textarea:focus, .form-select:focus {
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
   outline: none;
   border-color: var(--accent-base);
   box-shadow: 0 0 0 2px var(--accent-glow);

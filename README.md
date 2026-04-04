@@ -7,7 +7,6 @@ A modern, high-performance portfolio website built with React, Vite, and pure Va
 - **Micro-Animations** for a premium user experience (glows, fade-ins).
 - **Responsive Navigation** with a hamburger menu for mobile devices.
 - **Formspree Integration** on the Contact page for frictionless email delivery.
-- **Python CV Extractor**: Includes a script to automatically parse text from PDF CVs.
 
 ---
 
@@ -22,31 +21,18 @@ A modern, high-performance portfolio website built with React, Vite, and pure Va
 
 ## 🚀 How to Run Locally
 
-### 1. Web Application (React+Vite)
-To run the portfolio website on your local machine:
-```bash
-# Install NPM dependencies
-npm install
+To set up the portfolio website on a new machine or from a fresh clone:
 
-# Start the Vite development server
-npm run dev
-```
+1. All required packages for this React app are tracked in the `package.json` file.
+2. Open your terminal in the project directory and install the local dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
 The application will launch and be accessible at `http://localhost:5173/`.
-
-### 2. Python Environment (Optional - For CV Parsing)
-If you update your CVs in `resources/cv/` and want to extract the text from them again to update your React pages, you can use the Python extraction script.
-
-```bash
-# Optional: Set up a virtual environment (Windows)
-python -m venv venv
-.\venv\Scripts\activate
-
-# Install the required Python packages
-pip install -r requirements.txt
-
-# Run the extraction script
-python resources/extract_cv.py "resources/cv/industry/Rifat_Aknda_CV_v6.pdf" "resources/cv/industry_cv.txt"
-```
 
 ---
 
