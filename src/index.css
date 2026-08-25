@@ -1,0 +1,588 @@
+/* ============================================================
+   SYSTEM THEME (100% AUTOMATIC LIGHT & DARK)
+   ============================================================ */
+
+/* Light Theme (Default) */
+:root {
+  --bg:           #ffffff;
+  --bg-subtle:    #f6f8fa;
+  --bg-hover:     #f3f4f6;
+  --border:       #e1e4e8;
+  --border-subtle:#eaecef;
+  
+  --text:         #24292f;
+  --text-muted:   #57606a;
+  --text-dim:     #8c959f;
+
+  --link:         #0969da;
+  --link-hover:   #054da7;
+
+  --badge-award-bg:   #fff8c5;
+  --badge-award-text: #9a6700;
+  --badge-award-border: rgba(212, 160, 23, 0.4);
+
+  --tag-bg:       #f6f8fa;
+  --tag-text:     #57606a;
+  --tag-border:   #d0d7de;
+
+  --nav-bg:       rgba(255, 255, 255, 0.95);
+  
+  --font:         -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  --mono:         ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --max-w:        780px;
+}
+
+/* Dark Theme (Automatic when OS / system is set to dark) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:           #0d1117;
+    --bg-subtle:    #161b22;
+    --bg-hover:     #21262d;
+    --border:       #30363d;
+    --border-subtle:#21262d;
+    
+    --text:         #e6edf3;
+    --text-muted:   #8b949e;
+    --text-dim:     #6e7681;
+
+    --link:         #58a6ff;
+    --link-hover:   #79b8ff;
+
+    --badge-award-bg:   rgba(187, 128, 9, 0.15);
+    --badge-award-text: #e3b341;
+    --badge-award-border: rgba(227, 179, 65, 0.35);
+
+    --tag-bg:       #161b22;
+    --tag-text:     #8b949e;
+    --tag-border:   #30363d;
+
+    --nav-bg:       rgba(13, 17, 23, 0.95);
+  }
+}
+
+/* ============================================================
+   BASE & RESET
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+code, .mono {
+  font-family: var(--mono);
+  font-size: 0.88em;
+}
+
+/* ============================================================
+   CONTAINER
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.85rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-title:hover {
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-menu a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* ============================================================
+   HEADER / HERO
+   ============================================================ */
+.hero-section {
+  padding: 3.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.35rem;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.hero-bio {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.hero-links .dot {
+  color: var(--text-dim);
+  user-select: none;
+}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+.section {
+  padding: 2.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-heading {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sub-heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+}
+
+/* ============================================================
+   NEWS
+   ============================================================ */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1.25rem;
+  align-items: baseline;
+  font-size: 0.925rem;
+}
+
+.news-date {
+  font-family: var(--mono);
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.news-content {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   PUBLICATIONS (Jon Barron / Classic Academic Format)
+   ============================================================ */
+.pub-intro {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+  line-height: 1.65;
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.pub-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.pub-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--link);
+}
+.pub-title:hover {
+  text-decoration: underline;
+}
+
+.pub-award-inline {
+  display: inline-block;
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--badge-award-text);
+  background: var(--badge-award-bg);
+  border: 1px solid var(--badge-award-border);
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.pub-authors {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+.pub-authors strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.pub-venue {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+.pub-venue em {
+  color: var(--text);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pub-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+  font-family: var(--mono);
+  font-size: 0.825rem;
+}
+
+.pub-action-btn {
+  background: none;
+  border: none;
+  color: var(--link);
+  font-family: var(--mono);
+  font-size: 0.825rem;
+  cursor: pointer;
+  padding: 0;
+}
+.pub-action-btn:hover {
+  text-decoration: underline;
+}
+.pub-action-btn.copied {
+  color: #1a7f37;
+  font-weight: 600;
+}
+
+/* ============================================================
+   PROJECTS (Clean Curated List)
+   ============================================================ */
+.project-search-input {
+  width: 100%;
+  max-width: 380px;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+}
+.project-search-input:focus {
+  border-color: var(--link);
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project-entry {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.project-entry:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.project-entry-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+
+.project-entry-title {
+  font-size: 0.975rem;
+  font-weight: 600;
+}
+
+.project-entry-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.project-tag {
+  font-family: var(--mono);
+  font-size: 0.725rem;
+  color: var(--tag-text);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+}
+
+/* ============================================================
+   EXPERIENCE & EDUCATION
+   ============================================================ */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 0.975rem;
+  font-weight: 600;
+}
+
+.timeline-org {
+  color: var(--link);
+  font-weight: 500;
+}
+
+.timeline-date {
+  font-family: var(--mono);
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.timeline-bullets {
+  list-style: none;
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.timeline-bullets li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.timeline-bullets li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--text-dim);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.skill-category-title {
+  font-size: 0.825rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.skill-category-items {
+  font-size: 0.875rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+.contact-bio {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.contact-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  padding: 2.5rem 0;
+  font-size: 0.825rem;
+  color: var(--text-dim);
+  border-top: 1px solid var(--border);
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.footer a {
+  color: var(--text-dim);
+}
+.footer a:hover {
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 600px) {
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .nav-menu {
+    gap: 0.75rem;
+  }
+  .hero-name {
+    font-size: 1.85rem;
+  }
+}
