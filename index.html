@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Md. Rifat Aknda</title>
-    <meta name="description" content="Personal website of Md. Rifat Aknda — AI & Automation Engineer at SyncMetrics, ML Researcher, and author of 4 peer-reviewed publications in IEEE and MDPI." />
-    <meta name="author" content="Md. Rifat Aknda" />
-    <meta property="og:title" content="Md. Rifat Aknda" />
-    <meta property="og:description" content="AI & Automation Engineer at SyncMetrics. ML Researcher. 4 peer-reviewed publications. IEEE Best Paper Award 2025." />
-    <meta property="og:url" content="https://rifatmilon.github.io/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <script type="application/ld+json">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/rm-monogram-logo-dark.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="/rm-monogram-logo-white.png" media="(prefers-color-scheme: dark)" />
+  <script>
+    (function () {
+      const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+      function updateFavicon(e) {
+        const icon = document.querySelector("link[rel*='icon']");
+        if (icon) {
+          icon.href = e.matches ? "/rm-monogram-logo-white.png" : "/rm-monogram-logo-dark.png";
+        }
+      }
+      darkQuery.addEventListener("change", updateFavicon);
+      updateFavicon(darkQuery);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rifat Milon</title>
+  <meta name="description"
+    content="Personal website of Md. Rifat Aknda — AI & Automation Engineer at SyncMetrics, ML Researcher, and author of 4 peer-reviewed publications in IEEE and MDPI." />
+  <meta name="author" content="Md. Rifat Aknda" />
+  <meta property="og:title" content="Md. Rifat Aknda" />
+  <meta property="og:description"
+    content="AI & Automation Engineer at SyncMetrics. ML Researcher. 4 peer-reviewed publications. IEEE Best Paper Award 2025." />
+  <meta property="og:url" content="https://rifatmilon.github.io/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -29,9 +48,11 @@
       "worksFor": { "@type": "Organization", "name": "SyncMetrics" }
     }
     </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

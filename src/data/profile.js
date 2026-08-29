@@ -1,6 +1,6 @@
 export const profile = {
   name: "Md. Rifat Aknda",
-  role: "AI & Automation Engineer · ML Researcher",
+  role: "AI & Automation Engineer @ SyncMetrics | AI/ML Researcher | Prospective Ph.D. Candidate",
   affiliation: "SyncMetrics, Dhaka",
   email: "rifataknda.r@gmail.com",
   location: "Dhaka, Bangladesh",
@@ -16,14 +16,14 @@ export const profile = {
     <a href="https://ulab.edu.bd">University of Liberal Arts Bangladesh (ULAB)</a> in 2025.`,
 
   links: {
-    email:         "mailto:rifataknda.r@gmail.com",
-    cv:            "/Md_Rifat_Aknda__Resume.pdf",
-    academic_cv:   "/Md_Rifat_Aknda_academic_CV.pdf",
-    github:        "https://github.com/rifatmilon",
-    linkedin:      "https://www.linkedin.com/in/rifatmilon",
-    scholar:       "https://scholar.google.com/citations?user=qPC0U2gAAAAJ",
-    researchgate:  "https://www.researchgate.net/profile/Md-Aknda",
-    orcid:         "https://orcid.org/0009-0003-8483-0668",
+    email: "mailto:rifataknda.r@gmail.com",
+    cv: "/Md_Rifat_Aknda__Resume.pdf",
+    academic_cv: "/Md_Rifat_Aknda_academic_CV.pdf",
+    github: "https://github.com/rifatmilon",
+    linkedin: "https://www.linkedin.com/in/rifatmilon",
+    scholar: "https://scholar.google.com/citations?user=qPC0U2gAAAAJ",
+    researchgate: "https://www.researchgate.net/profile/Md-Aknda",
+    orcid: "https://orcid.org/0009-0003-8483-0668",
   },
 
   news: [

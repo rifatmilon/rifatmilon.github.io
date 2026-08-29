@@ -5,15 +5,21 @@ export function Hero() {
   const { links } = profile;
 
   return (
-    <section className="hero-section" id="about">
+    <section className="hero-section" id="hero">
       <div className="container">
-        <h1 className="hero-name">{profile.name}</h1>
-        <p className="hero-subtitle">{profile.role}</p>
-        
-        <div
-          className="hero-bio"
-          dangerouslySetInnerHTML={{ __html: profile.bio }}
-        />
+        <div className="hero-top">
+          <div className="hero-info">
+            <h1 className="hero-name">{profile.name}</h1>
+            <p className="hero-subtitle">{profile.role}</p>
+          </div>
+          <div className="hero-avatar-wrapper">
+            <img
+              src={profile.avatar || "/profile-picture.jpg"}
+              alt={profile.name}
+              className="hero-avatar"
+            />
+          </div>
+        </div>
 
         <div className="hero-links">
           <a href={links.email}>Email</a>

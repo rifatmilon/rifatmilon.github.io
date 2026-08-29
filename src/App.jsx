@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { About } from './components/About';
 import { News } from './components/News';
 import { Research } from './components/Research';
 import { Projects } from './components/Projects';
@@ -14,6 +15,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <About />
         <News />
         <Research />
         <Projects />
